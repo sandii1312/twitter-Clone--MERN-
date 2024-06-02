@@ -169,7 +169,7 @@ export const getLikedPosts = async (req,res) => {
         console.log("Error in Liked posts", error.message);
         res.status(500).json({ error: "Internal server error" });
     }
-}
+};
 
 
 export const getFollowingPosts = async (req,res) => {
@@ -205,7 +205,7 @@ export const getFollowingPosts = async (req,res) => {
         console.log("Error in following posts", error.message);
         res.status(500).json({ error: "Internal server error" });
     }
-}
+};
 
 export const getUserPosts = async (req,res) => {
   
@@ -236,6 +236,6 @@ export const getUserPosts = async (req,res) => {
       console.log("Error in user posts", error.message);
       res.status(500).json({ error: "Internal server error" });
   }
-}
+};
 
 
