@@ -195,15 +195,15 @@ export const getFollowingPosts = async (req,res) => {
       });
 
       if(feedPosts.length === 0 ){
-        res.status(200).json({message: "No post In Feed"});
+        return res.status(200).json({message: "No post In Feed"});
       }
 
-      res.status(200).json(feedPosts);
+      return res.status(200).json(feedPosts);
         
 
     } catch (error) {
         console.log("Error in following posts", error.message);
-        res.status(500).json({ error: "Internal server error" });
+        return res.status(500).json({ error: "Internal server error" });
     }
 };
 
